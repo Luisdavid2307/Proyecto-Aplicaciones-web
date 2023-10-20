@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="/images/logo.png" alt="logo" class="logo">
+            <ul>
+                <li><a href="/Principal/principal.html">Inicio</a></li>
+                <li><a href="/index.html">Cerrar Sesión</a></li>
+            </ul>
+        </div>
+    </div>
+
+        <div class="cuerpo-form">
+            <form class="formulario">
+                <h1>Ingresa los datos de tu publicación</h1><br><br>
+                <input type="text" id="publicacion" name="publicacion" required placeholder="Título">
+                <input type="text" id="nombre" name="nombre" required placeholder="Autor">
+                <input type="email" id="email" name="email" required placeholder="Correo electronico">
+                <input type="text" id="afiliacion" name="afiliacion" required placeholder="Institución">
+                <textarea id="resumen" name="resumen" rows="4" cols="50" required placeholder="Resumen"></textarea>
+                <label for="fecha">Fecha de Publicación:</label>
+                <input type="date" id="fecha" name="fecha" required placeholder=""><br>
+                <label for="archivo">Archivo de la Publicación:</label>
+                <input type="file" id="archivo" name="archivo" accept=".pdf" required><br>
+                <button type="submit" id="submit">Enviar</button>
+            </form>
+        </div>
+</body>
+
+</html>
