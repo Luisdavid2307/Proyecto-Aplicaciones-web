@@ -22,8 +22,8 @@ form.addEventListener("submit", e => {
     let entrar = false;
     let regexEmail = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
 
-    if (nombreInput.value.length < 6) {
-        warnings += 'El nombre debe tener al menos 6 caracteres.<br>';
+    if (nombreInput.value.length < 4) {
+        warnings += 'El nombre debe tener al menos 4 caracteres.<br>';
         entrar = true;
     }
 
